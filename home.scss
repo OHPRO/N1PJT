@@ -1,0 +1,48 @@
+// Homepage의 고유의 스타일링. (유지보수 할때 좀더 쉽게 하려면 app.css에 해도 상관없이만 특정을 지으려면 만들어주면 된다. 
+// 앱전체에 규정할떄만 app.css에 규정한다. 
+// 또한 css는 theme에 css는 os별에 맞춤형 css를 제공한다. 
+
+#logo {
+    max-width: 40% !important; //상단 로그 사이즈 지정
+}
+.col {
+    padding: 0 !important;
+}
+#refresh {
+    float:right;
+}
+#colname {
+    text-transform:uppercase;
+    color:#466581;
+    margin: 13px 0 0 10px;
+    display:block;
+}
+
+span.label {
+    text-transform:uppercase !important;
+    font-size: .7em;
+    color: #327EB1;
+    display:block;
+}
+
+span.answer {
+    font-size: .7em;
+}
+
+.end {
+    text-align:right;
+}
+
+.list-md ion-item-options .button {
+    height: 45px !important;
+    background-color: #19232C !important;
+}
+
+.list-md ion-item-options {
+    border-bottom: 0;
+}
+
+.size {
+    font-size:28px;
+    padding:10px;
+}

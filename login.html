@@ -1,0 +1,37 @@
+<!--
+  Generated template for the LoginPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>COINFUL 로그인</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <!--여기에 ionic docs -> input -> floating code 복사-->
+  <ion-list>
+
+    <ion-item>
+      <ion-label floating>email</ion-label>
+      <ion-input type="email" [(ngModel)]="account.email" ></ion-input> <!--email : 메모리의 있는 것을 ngModel로 데이터바인딩해서 동기화 -->
+    </ion-item>
+  
+    <ion-item>
+      <ion-label floating>password</ion-label>
+      <ion-input type="password"  [(ngModel)]="account.password"></ion-input> <!--password : 여기서 ngModel을 써서 데이터바인딩해서 동기화 해줘야한다-->
+    </ion-item>
+    <div class='divider' style="width:100%;height:30px"></div> <!--divider라는 클래스를 쓰게 되면 높이를 조금 떨어뜨릴수 있다.-->
+  
+  </ion-list>
+
+  <button ion-button full (click)="login()">login</button> <!--버튼을 누르면 로그인펑션을 실행해라-->
+
+  <button ion-button full (click)="signup()" color="secondary">Sign Up</button>
+</ion-content>
